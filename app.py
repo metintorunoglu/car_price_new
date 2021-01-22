@@ -19,10 +19,10 @@ selection=st.selectbox("Select Your Model", ["XGBOOST", "Random Forest"])
 
 if selection =="XGBOOST":
 	st.write("You selected", selection, "model")
-	model= pickle.load(open('xgb_model', 'rb'))
+	model= pickle.load(open('xgb_model_new', 'rb'))
 else:
 	st.write("You selected", selection, "model")
-	model= pickle.load(open('rf_model', 'rb'))
+	model= pickle.load(open('rf_model_new', 'rb'))
     
 
 age=st.sidebar.selectbox("What is the age of your car",(1,2,3))
